@@ -108,9 +108,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.media",
     "django.core.context_processors.static",
     "django.contrib.messages.context_processors.messages",
+    'django.core.context_processors.request',
     "mediabrute.context_processors.mini_media",
     "noodles.context_processors.static_paths",
     "noodles.context_processors.site_meta",
+    "noodles.context_processors.site",
 )
 
 MIDDLEWARE_CLASSES = (
