@@ -8,7 +8,7 @@ Should work, out-of-the-box with runserver
 
 from conf.base import *
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
