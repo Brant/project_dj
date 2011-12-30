@@ -25,3 +25,5 @@ style-*_.css
 .project
 .pydevproject
 .DS_Store
+src/dj/conf/tests.py
+.svn
