@@ -10,7 +10,7 @@ It should not hold thigns like passwords or hard-coded system paths
 import os
 
 PROJECT_PATH = os.path.abspath( os.path.dirname(__file__) )
-THE_THEME = "themes/pilot"
+THE_THEME = "themes/dj"
 
 while "/src" in PROJECT_PATH or "\\src" in PROJECT_PATH:
     PROJECT_PATH = os.path.dirname(PROJECT_PATH)
@@ -145,6 +145,8 @@ INSTALLED_APPS = (
     "dj",
     "mediabrute",
     "noodles",
+    
+    "website",
 )
 
 # A sample logging configuration. The only tangible logging
