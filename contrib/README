@@ -1,0 +1,7 @@
+Needs:
+	- django-mediabrute ( https://github.com/Brant/django-mediabrute )
+	- django-debug-toolbar ( http://pypi.python.org/pypi/django-debug-toolbar )
+	- django-noodles ( https://github.com/Brant/django-noodles )
+
+Eventually, we will package up those dependencies or run them through a buildout.
+But, for the time being, just install them from above
