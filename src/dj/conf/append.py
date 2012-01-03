@@ -8,6 +8,8 @@ These settings usually fall into one of these categories:
 """
 from dj.settings import DEBUG, INSTALLED_APPS, MIDDLEWARE_CLASSES, STATIC_URL, THE_THEME, PROJECT_PATH
 
+JS_SETTINGS_TEMPLATE = "mediabrute/js/config.txt"
+
 if STATIC_URL.startswith("/") and not STATIC_URL.startswith("//"):
     MEDIABRUTE_CACHE_BASE_URL = "/"
     CSS_DIR = "static/css"
