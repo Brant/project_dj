@@ -23,7 +23,6 @@ os.sys.path.insert(0, os.path.join(PROJECT_PATH, "contrib"))
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
     ("Brant", "brant.steen@gmail.com"),
-    ("Tim", "cyface@gmail.com"),
 )
 
 MANAGERS = ADMINS
