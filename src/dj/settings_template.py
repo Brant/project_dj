@@ -32,3 +32,13 @@ if DEBUG:
     INSTALLED_APPS += ( "debug_toolbar", )
     MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware', )
     DEBUG_TOOLBAR_CONFIG = {'INTERCEPT_REDIRECTS': False, }
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:
+    EMAIL_HOST = ''
+    EMAIL_HOST_USER = ''
+    EMAIL_HOST_PASSWORD = ''
+
+#NOODLES_EMAIL_LIST = []
+#EMAIL_SUBJECT_PREFIX = ""    
+#DEFAULT_FROM_EMAIL = ''
+#SERVER_EMAIL = ''
