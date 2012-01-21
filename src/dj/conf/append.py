@@ -10,6 +10,9 @@ from dj.settings import DEBUG, INSTALLED_APPS, MIDDLEWARE_CLASSES, STATIC_URL, T
 
 JS_SETTINGS_TEMPLATE = "mediabrute/js/config.txt"
 
+CSS_TOP_FILES = ["base.css", "style.css", "shirt.l.css"]
+CSS_BOTTOM_FILES = ["shirt.m.css", "shirt.s.css", "shirt.xl.css", ]
+
 if STATIC_URL.startswith("/") and not STATIC_URL.startswith("//"):
     MEDIABRUTE_CACHE_BASE_URL = "/"
     CSS_DIR = "static/css"
