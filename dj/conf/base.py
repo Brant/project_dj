@@ -17,7 +17,9 @@ while "/dj/conf" in PROJECT_PATH or "\\dj\\conf" in PROJECT_PATH:
 PROJECT_PATH = os.path.dirname(PROJECT_PATH)
 
 os.sys.path.insert(0, PROJECT_PATH)
+os.sys.path.insert(0, os.path.join(PROJECT_PATH, "src"))
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "contrib"))
+
 
 
 ADMINS = (
