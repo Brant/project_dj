@@ -27,3 +27,4 @@ style-*_.css
 .DS_Store
 src/dj/conf/tests.py
 .svn
+dj/conf/tests.py
