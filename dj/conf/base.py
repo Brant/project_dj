@@ -12,13 +12,13 @@ import os
 PROJECT_PATH = os.path.abspath( os.path.dirname(__file__) )
 THE_THEME = "themes/dj"
 
-while "/src" in PROJECT_PATH or "\\src" in PROJECT_PATH:
+while "/dj/conf" in PROJECT_PATH or "\\dj\\conf" in PROJECT_PATH:
     PROJECT_PATH = os.path.dirname(PROJECT_PATH)
-
+PROJECT_PATH = os.path.dirname(PROJECT_PATH)
 
 os.sys.path.insert(0, PROJECT_PATH)
-os.sys.path.insert(0, os.path.join(PROJECT_PATH, "src"))
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "contrib"))
+
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -151,7 +151,7 @@ INSTALLED_APPS = (
 
 
 try:
-    from conf.tests import *
+    from tests import *
     INSTALLED_APPS += TEST_APPS
 except ImportError:
     pass
@@ -164,17 +164,41 @@ except ImportError:
 # more details on how to customize your logging configuration.
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
+    'disable_existing_loggers': False,''
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',
+            'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
+        'console': {
+            'level':'DEBUG',
+            'class':'logging.StreamHandler',
+            'formatter': 'simple'
+        },
     },
     'loggers': {
         'django.request': {
-            'handlers': ['mail_admins'],
+            'handlers': ['mail_admins', 'console'],
             'level': 'ERROR',
+            'propagate': True,
+        },
+        'py.warnings': {
+            'handlers': ['console'],
+            'level': 'WARNING',
             'propagate': True,
         },
     }

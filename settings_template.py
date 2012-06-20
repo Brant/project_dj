@@ -6,9 +6,9 @@ Things that need to be customized to fit a particular environment should go here
 Should work, out-of-the-box with runserver
 """
 
-from conf.base import *
+from dj.conf.base import *
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
@@ -25,7 +25,7 @@ DATABASES = {
 MEDIA_URL = "/media/"
 STATIC_URL = '/static/'
 
-from conf.append import *
+from dj.conf.append import *
 
 if DEBUG:
     INTERNAL_IPS = ('127.0.0.1',)
