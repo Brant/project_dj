@@ -10,5 +10,5 @@ From the root of this project...
 4. **run:** python ./manage.py runserver 8001
 
 ## Customize settings
-- Customize *your* settings in ./src/dj/settings.py
-- Customize *global* (commitable, project based) settings in ./src/dj/conf/*.py 
+- Customize *your* settings in ./dj/settings.py
+- Customize *global* (commitable, project based) settings in ./dj/conf/*.py 
