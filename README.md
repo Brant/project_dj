@@ -11,6 +11,8 @@ If you want to jump right into designing a homepage, head to:
 
 	./assets/themes/dj/templates/website/home.html
 
+
+
 ## GoGo
 gogo.py is a convinience script designed to get you up and running as fast as possible on a new project
 
