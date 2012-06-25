@@ -1,12 +1,21 @@
 Base Django Project
 ================
 
-## 1. Get up and running
+## Jump right in
+Here's the quick and dirty to get up and running with a fresh project.
+
+### 1. Beforehand
+You'll need a couple of things installed first
+1. either setuptools or pip
+2. virtualenv
+3. sqlite3
+
+### 2. Get up and running
 From the root of this project...
 
 	python ./gogo.py
 
-## 2. Jump right in
+### 3. Start working
 If you want to jump right into designing a homepage, head to:
 
 	./assets/themes/dj/templates/website/home.html
