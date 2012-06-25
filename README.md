@@ -16,7 +16,15 @@ From the root of this project...
 ### You'll need a couple of things beforehand
 1. either setuptools or pip
 2. virtualenv
+3. sqlite3
+
+## Jump right in
+If you want to jump right into designing a homepage, head to:
+
+	./assets/themes/dj/templates/website/home.html
+
 
 ## Customize settings
 - Customize *your* settings in ./dj/settings.py
 - Customize *global* (commitable, project based) settings in ./dj/conf/*.py 
+
