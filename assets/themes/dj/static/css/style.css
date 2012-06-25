@@ -1,0 +1,74 @@
+/*
+ * Mobile-first!
+ * 
+ * There's an included JS patch to deal with old IE incompatibilties for media queries
+ */
+
+/*
+ * Element styles
+ */
+html{
+	
+}
+body{
+	
+}
+a,
+a:link,
+a:active,
+a:visited{
+	
+}
+a:hover{
+	
+}
+
+p, ol, ul{
+	margin:0;
+	padding:0 0 25px;
+}
+img{
+	max-width:100%;
+}
+
+/*
+ * Headings
+ */
+h1, h2, h3, h4, h5{
+	margin:0;
+	font-weight: normal;
+}
+h1{
+	
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+h5{
+	
+}
+
+/*
+ * General purpose styles
+ */
+.width{
+	padding:0 10px;
+}
+
+
+/*
+ * Bigger screens second
+ */
+@media all and (min-width:45em){
+	.width{
+		max-width:960px;
+		margin:0 auto;
+		display:block;
+	}
+}
