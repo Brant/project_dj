@@ -8,9 +8,11 @@ Should work, out-of-the-box with runserver
 
 from dj.conf.base import *
 
+# Set DEBUG to False for production use
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+# Database settings
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -22,12 +24,12 @@ DATABASES = {
     }
 }
 
+# As you created Django apps for your project, add them here
+INSTALLED_APPS += ()
+
+# Media and Static URLs (these are configured to work nicely with runserver
 MEDIA_URL = "/media/"
 STATIC_URL = '/static/'
-
-INSTALLED_APPS += () 
-MIDDLEWARE_CLASSES += ()
-
 
 from dj.conf.append import *
 
