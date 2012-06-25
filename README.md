@@ -6,8 +6,16 @@ From the root of this project...
 
 	python ./gogo.py
 
-You'll need either setuptools or virtualenv already setup for your python environment
+### That will do a few things for you
+1. Setup a virtual environment (using virtualenv)
+2. Download and install the packages listed in requirements.txt into the virtual environment
+3. Setup a settings file for you, based on a template (if the settings don't already exist)
+4. Create and sync the initial database (if it doesnt already exist)
+5. Fire up runserver on port 8001
 
+### You'll need a couple of things beforehand
+1. either setuptools or pip
+2. virtualenv
 
 ## Customize settings
 - Customize *your* settings in ./dj/settings.py
