@@ -24,8 +24,6 @@ If you want to jump right into designing a homepage, head to:
 
 ## Structure
 It's important to understand a little bit about the structure of the project, as certain areas are "magic" and other areas pertain to the way Django handles it's structure.
-### dj
-The ./dj directory is essentially where all your settings live. Whenever possible, try to stick to editing ./dj/settings.py instead of anything inside the ./dj/conf directory.
 
 ### assets
 Assets include:
@@ -40,6 +38,9 @@ The src directory is where the Django apps created by *you* for *your* project s
 
 ### contrib
 If there are packages you want to try without necessarily making them part of the requirements.txt file for the virtualenv just yet, stick them in the contrib directory. They will automatically become part of the available python packages in runserver (although you may need to restart the runserver when you add a new package).
+
+### dj
+The ./dj directory is essentially where all your settings live. Whenever possible, try to stick to editing ./dj/settings.py instead of anything inside the ./dj/conf directory.
 
 ### env
 The env directory is the default place that virtualenv will setup your isolated python environment for this project. If you want to change the directory name, you can do so in gogo.py.
