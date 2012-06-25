@@ -6,6 +6,7 @@ Here's the quick and dirty to get up and running with a fresh project.
 
 ### 1. Beforehand
 You'll need a couple of things installed first
+
 1. either setuptools or pip
 2. virtualenv
 3. sqlite3
