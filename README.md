@@ -2,7 +2,7 @@ Base Django Project
 ================
 This is my codebase for getting started with a new Django project. It's designed to smooth a lot of rough edges, mostly regarding things like configurations that can be confusing and/or time consuming.
 
-Project DJ takes a [convention over configuration](http://en.wikipedia.org/wiki/Convention_over_configuration) approach to starting a Django project. In other words, there's a lot of stuff that the basic django-admin start_project doesn't include that I always need to then fiddle with settings for. For example, remember that time that you made a django project but didn't use the Admin panel? Yea, me either. 
+Project DJ takes a [convention over configuration](http://en.wikipedia.org/wiki/Convention_over_configuration) approach to starting a Django project. In other words, there's a lot of stuff that the basic *django-admin startproject* doesn't include that I always need to then fiddle with settings for. For example, remember that time that you made a django project but didn't use the Admin panel? Yea, me either. 
 
 It also provides some handy front-end stuff for websites that I almost always use.
 
