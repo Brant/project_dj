@@ -3,7 +3,9 @@ Base Django Project
 This is my codebase for gettings started with a new Django project. It's designed to smooth a lot of rough edges, mostly regarding things like configurations that can be confusing and/or time consuming. It also provides some handy front-end stuff for websites that I almost always use.
 
 ## Jump right in
-Here's the quick and dirty to get up and running with a fresh project.
+Here's the quick and dirty to get up and running with a fresh project. 
+
+Unless you are working on the project_dj codebase specifically, I suggest you download a ZIP or something, as this is really designed to help you start your *own* project, which will presumably be under its own version control.
 
 ### 1. Beforehand
 You'll need a couple of things installed first
