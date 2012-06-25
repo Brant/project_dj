@@ -12,7 +12,7 @@ This is really designed to help you start your *own* project, which will presuma
 ### 0. Beforehand
 You'll need a couple of things installed first
 
-1. either setuptools or pip
+1. pip
 2. virtualenv
 3. sqlite3
 
@@ -63,7 +63,7 @@ gogo.py is a convinience script designed to get you up and running as fast as po
 5. Fire up runserver on port 8001
 
 #### You'll need a couple of things beforehand
-1. either setuptools or pip
+1. pip
 2. virtualenv
 3. sqlite3
 
