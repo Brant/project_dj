@@ -25,6 +25,10 @@ DATABASES = {
 MEDIA_URL = "/media/"
 STATIC_URL = '/static/'
 
+INSTALLED_APPS += () 
+MIDDLEWARE_CLASSES += ()
+
+
 from dj.conf.append import *
 
 if DEBUG:

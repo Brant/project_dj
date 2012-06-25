@@ -13,8 +13,10 @@ If you want to jump right into designing a homepage, head to:
 
 ## Structure
 It's important to understand a little bit about the structure of the project, as certain areas are "magic" and other areas pertain to the way Django handles it's structure.
+### dj
+The ./dj directory is essentially where all your settings live. Whenever possible, try to stick to editing ./dj/settings.py instead of anything inside the ./dj/conf directory.
 
-### Assets
+### assets
 Assets include:
 
 1. CSS
