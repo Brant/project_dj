@@ -41,6 +41,9 @@ The src directory is where the Django apps created by *you* for *your* project s
 ### contrib
 If there are packages you want to try without necessarily making them part of the requirements.txt file for the virtualenv just yet, stick them in the contrib directory. They will automatically become part of the available python packages in runserver (although you may need to restart the runserver when you add a new package).
 
+### env
+The env directory is the default place that virtualenv will setup your isolated python environment for this project. If you want to change the directory name, you can do so in gogo.py.
+
 ## Other puzzle peices
 ### GoGo
 gogo.py is a convinience script designed to get you up and running as fast as possible on a new project
