@@ -1,4 +1,4 @@
-Base Django Project
+Project DJ (A base Django project)
 ================
 This is my codebase for getting started with a new Django project. It's designed to smooth a lot of rough edges, mostly regarding things like configurations that can be confusing and/or time consuming.
 
