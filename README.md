@@ -28,14 +28,16 @@ From the root of this project, run at command line...
 	python ./gogo.py
  
 ### 2. Start working
-If you want to jump right into designing a homepage, head to:
-
-	./assets/themes/dj/templates/website/home.html
-	
 If you want to start creating Django apps for your project, they should live here:
 
 	./src/<your_app>
 
+There's one there for you already, named *website*. You can feel free to start with that one.
+
+If you want to jump right into designing a homepage, head to:
+
+	./assets/themes/dj/templates/website/home.html
+	
 ## Structure
 It's important to understand a little bit about the structure of the project, as certain areas are "magic" and other areas pertain to the way Django handles it's structure.
 
