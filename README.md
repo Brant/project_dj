@@ -26,8 +26,6 @@ If you don't want to use virtualenv, you can look at the requirements.txt file a
 From the root of this project, run at command line...
 
 	python ./gogo.py
-
-If you are on some linux or unix system (including OSX), you should be able to just run *./gogo.py*
  
 ### 2. Start working
 If you want to jump right into designing a homepage, head to:
