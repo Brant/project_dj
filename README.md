@@ -55,6 +55,9 @@ If there are packages you want to try without necessarily making them part of th
 ### env
 The env directory is the default place that virtualenv will setup your isolated python environment for this project. If you want to change the directory name, you can do so in gogo.py.
 
+### apache
+This directory is for stuff to help you move your project into an apache server environment. It's not automated in any way and you'll need to configure the paths to fit your needs.
+
 ## Other puzzle peices
 ### GoGo
 gogo.py is a convinience script designed to get you up and running as fast as possible on a new project
