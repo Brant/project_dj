@@ -17,7 +17,7 @@ You'll need a couple of things installed first
 3. sqlite3
 
 ### 1. Get up and running
-From the root of this project...
+From the root of this project, run at command line...
 
 	python ./gogo.py
 
