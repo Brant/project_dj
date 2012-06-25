@@ -1,12 +1,12 @@
 Base Django Project
 ================
 
-## Get up and running
+## 1. Get up and running
 From the root of this project...
 
 	python ./gogo.py
 
-## Jump right in
+## 2. Jump right in
 If you want to jump right into designing a homepage, head to:
 
 	./assets/themes/dj/templates/website/home.html
