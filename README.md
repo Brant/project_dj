@@ -5,7 +5,7 @@ This is my codebase for gettings started with a new Django project. It's designe
 ## Jump right in
 Here's the quick and dirty to get up and running with a fresh project. 
 
-Unless you are working on the project_dj codebase specifically, I suggest you download a ZIP or something. This is really designed to help you start your *own* project, which will presumably be under its own version control.
+Unless you are working on the project_dj codebase specifically, I suggest you download a ZIP (instead of cloning/forking/pulling/whatever the source). This is really designed to help you start your *own* project, which will presumably be under its own version control.
 
 ### 1. Beforehand
 You'll need a couple of things installed first
