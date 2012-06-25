@@ -1,5 +1,6 @@
 Base Django Project
 ================
+This is my codebase for gettings started with a new Django project. It's designed to smooth a lot of rough edges, mostly regarding things like configurations that can be confusing and/or time consuming. It also provides some handy front-end stuff for websites that I almost always use.
 
 ## Jump right in
 Here's the quick and dirty to get up and running with a fresh project.
