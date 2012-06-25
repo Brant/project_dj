@@ -9,19 +9,19 @@ Unless you are working on the project_dj codebase specifically, I suggest you do
 
 This is really designed to help you start your *own* project, which will presumably be under its own version control.
 
-### 1. Beforehand
+### 0. Beforehand
 You'll need a couple of things installed first
 
 1. either setuptools or pip
 2. virtualenv
 3. sqlite3
 
-### 2. Get up and running
+### 1. Get up and running
 From the root of this project...
 
 	python ./gogo.py
 
-### 3. Start working
+### 2. Start working
 If you want to jump right into designing a homepage, head to:
 
 	./assets/themes/dj/templates/website/home.html
