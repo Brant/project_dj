@@ -66,6 +66,9 @@ def syncdb():
     
     
 def run_server():
+    """
+    Fire up the runserver
+    """
     print "--- Running server ---"
     commands = [". ./env/bin/activate",
                 "python ./manage.py runserver 8001",
@@ -74,6 +77,9 @@ def run_server():
 
 
 def run_commands(commands):
+    """
+    Just a convinience thing to run commands in succession within a single shell
+    """
     os.system(";".join(commands))
     
     
