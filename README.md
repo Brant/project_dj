@@ -16,6 +16,7 @@ It's important to understand a little bit about the structure of the project, as
 
 ### Assets
 Assets include:
+
 1. CSS
 2. JS
 3. Images
@@ -31,7 +32,7 @@ If there are packages you want to try without necessarily making them part of th
 ### GoGo
 gogo.py is a convinience script designed to get you up and running as fast as possible on a new project
 
-#### It will do a few things for you
+#### GoGo will do a few things for you
 1. Setup a virtual environment (using virtualenv)
 2. Download and install the packages listed in requirements.txt into the virtual environment
 3. Setup a settings file for you, based on a template (if the settings don't already exist)
