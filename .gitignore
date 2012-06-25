@@ -28,3 +28,4 @@ style-*_.css
 src/dj/conf/tests.py
 .svn
 dj/conf/tests.py
+env/
