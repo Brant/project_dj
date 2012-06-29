@@ -153,7 +153,6 @@ INSTALLED_APPS = (
     "mediabrute",
     "noodles",
     
-    "website",
 )
 
 

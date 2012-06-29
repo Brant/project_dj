@@ -25,7 +25,7 @@ DATABASES = {
 }
 
 # As you created Django apps for your project, add them here
-INSTALLED_APPS += ()
+INSTALLED_APPS += ("website", )
 
 # Media and Static URLs (these are configured to work nicely with runserver
 MEDIA_URL = "/media/"
