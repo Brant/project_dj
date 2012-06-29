@@ -20,6 +20,13 @@ os.sys.path.insert(0, PROJECT_PATH)
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "src"))
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "contrib"))
 
+# Uncomment the next two lines 
+# to see your current python path
+# when runserver fires up
+#for p in os.sys.path:
+#    print p
+
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
     ("Brant", "brant.steen@gmail.com"),
@@ -151,7 +158,7 @@ INSTALLED_APPS = (
 
 
 try:
-    from tests import *
+    from dj.conf.tests import *
     INSTALLED_APPS += TEST_APPS
 except ImportError:
     pass
