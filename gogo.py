@@ -5,6 +5,7 @@ import shutil
 import sys
 from optparse import OptionParser
 
+
 def do_stuff(args, options):
     """
     Run a bunch of stuff in sequence
@@ -24,7 +25,6 @@ def do_stuff(args, options):
         run_server()
         
 
-
 def clean_env():
     """
     Removes the existing virtual environment
@@ -32,6 +32,7 @@ def clean_env():
     if os.path.isdir("./env"):
         print "--- removing existing environment ---"
         shutil.rmtree("./env")
+
 
 def setup_env():
     """
