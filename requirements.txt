@@ -5,5 +5,5 @@ nose
 nose_exclude
 nosexcover
 django-debug-toolbar
--e git://github.com/Brant/django-mediabrute.git#egg=django-mediabrute
--e git://github.com/Brant/django-noodles.git#egg=django-noodles
+git+git://github.com/Brant/django-mediabrute.git
+git+git://github.com/Brant/django-noodles.git
