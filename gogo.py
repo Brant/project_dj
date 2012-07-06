@@ -2,16 +2,37 @@
 
 import os
 import shutil
+import sys
+from optparse import OptionParser
 
-
-def do_stuff():
+def do_stuff(args, options):
     """
     Run a bunch of stuff in sequence
     """
-    setup_env()
-    initial_syncdb()
-    run_server()
+    if options.clean_env:
+        clean_env()
+    
+    if len(args) > 0:
+        if "build" in args:
+            setup_env()
+        else:
+            print "Argument(s) '%s' not recognized" % args
+            exit(1)
+    else:
+        setup_env()
+        initial_syncdb()
+        run_server()
+        
+    exit(0)
 
+
+def clean_env():
+    """
+    Removes the existing virtual environment
+    """
+    if os.path.isdir("./env"):
+        print "--- removing existing environment ---"
+        shutil.rmtree("./env")
 
 def setup_env():
     """
@@ -24,7 +45,7 @@ def setup_env():
     conf_template = os.path.join(my_dir, "dj/settings_template.py")
     env_path = os.path.join(my_dir, "env")
     
-    commands = ["virtualenv env",
+    commands = ["virtualenv --system-site-packages env",
                 ". ./env/bin/activate",]
     
     if os.path.isdir(env_path):
@@ -82,6 +103,12 @@ def run_commands(commands):
     """
     os.system(";".join(commands))
     
-    
+
+parser = OptionParser()
+parser.add_option("-c", "--clean", 
+                  help="Use option to clean the virtual environment before building a new one", 
+                  action="store_true", dest="clean_env")
+(options, args) = parser.parse_args()
+
 if __name__ == "__main__":
-    do_stuff()
+    do_stuff(args, options)
