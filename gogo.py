@@ -23,7 +23,6 @@ def do_stuff(args, options):
         initial_syncdb()
         run_server()
         
-    exit(0)
 
 
 def clean_env():
