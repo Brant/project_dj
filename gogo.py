@@ -45,7 +45,7 @@ def setup_env():
     conf_template = os.path.join(my_dir, "dj/settings_template.py")
     env_path = os.path.join(my_dir, "env")
     
-    commands = ["virtualenv env",
+    commands = ["virtualenv --system-site-packages env",
                 ". ./env/bin/activate",]
     
     if os.path.isdir(env_path):
