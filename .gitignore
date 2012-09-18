@@ -31,3 +31,4 @@ dj/conf/tests.py
 env/
 build/
 assets/uploads/*/*
+mediabrute_usefile
