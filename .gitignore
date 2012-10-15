@@ -30,5 +30,4 @@ src/dj/conf/tests.py
 dj/conf/tests.py
 env/
 build/
-assets/uploads/*/*
 mediabrute_usefile
