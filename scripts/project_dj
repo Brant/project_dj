@@ -1,3 +1,12 @@
 #!/usr/bin/env python
+import shutil, os, sys
 
-print "hi"
+from project_dj import PROJECT_DJ_ASSETS
+from project_dj.util import recursive_file_gen
+
+if __name__ == "__main__":
+    
+    dest_dir = os.path.dirname(sys.argv[1])
+    recursive_file_gen(PROJECT_DJ_ASSETS, dest_dir)
+    
+#    main()
