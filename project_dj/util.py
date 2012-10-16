@@ -21,7 +21,7 @@ def recursive_file_gen(src_dir, dest_dir):
                 os.mkdir(placement)
                 
         for the_file in files:
-            if not the_file.endswith(".pyc"):
+            if not the_file.endswith(".pyc") and not the_file.startswith("."):
                 if root.find('/.') == -1 and root.find('\.') == -1:
                     orig = os.path.join(root, the_file)
                     placement = orig.replace(src_dir, dest_dir)

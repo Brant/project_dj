@@ -9,12 +9,7 @@ It should not hold thigns like passwords or hard-coded system paths
 """
 import os
 
-PROJECT_PATH = os.path.abspath( os.path.dirname(__file__) )
 THE_THEME = "themes/dj"
-
-while "/dj/conf" in PROJECT_PATH or "\\dj\\conf" in PROJECT_PATH:
-    PROJECT_PATH = os.path.dirname(PROJECT_PATH)
-PROJECT_PATH = os.path.dirname(PROJECT_PATH)
 
 os.sys.path.insert(0, PROJECT_PATH)
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "src"))
