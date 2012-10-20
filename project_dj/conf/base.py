@@ -120,18 +120,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    "dj",
     "mediabrute",
     "noodles",
-    
 )
 
 
-try:
-    from dj.conf.tests import *
-    INSTALLED_APPS += TEST_APPS
-except ImportError:
-    pass
 
 
 # A sample logging configuration. The only tangible logging

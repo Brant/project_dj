@@ -15,7 +15,7 @@ setup(
     include_package_data = True,
     zip_safe = False,
 
-    install_requires = ['setuptools', 'django', ],
+    install_requires = ['django', ],
 
     scripts = ["scripts/project_dj", ],
 
