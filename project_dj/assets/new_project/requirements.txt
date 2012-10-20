@@ -2,3 +2,4 @@ django>=1.4
 django-debug-toolbar
 git+git://github.com/Brant/django-mediabrute.git
 git+git://github.com/Brant/django-noodles.git
+South
