@@ -6,7 +6,11 @@ These settings usually fall into one of these categories:
     2) setting that requires the import of some other specific setting (e.g. DEBUG)
 
 """
+import os
 from settings import DEBUG, INSTALLED_APPS, MIDDLEWARE_CLASSES, STATIC_URL, THE_THEME, PROJECT_PATH
+
+
+TEMPLATE_DEBUG = DEBUG
 
 JS_SETTINGS_TEMPLATE = "mediabrute/js/config.txt"
 
@@ -57,3 +61,26 @@ if DEBUG and STATIC_URL.startswith("/") and not STATIC_URL.startswith("//"):
     STATIC_ROOT = PROJECT_PATH + "/assets/" + THE_THEME + "/"
 
 
+
+# Database settings
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': PROJECT_PATH + '/dj.sqlite',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+if DEBUG:
+    INTERNAL_IPS = ('127.0.0.1',)
+    INSTALLED_APPS += ( "debug_toolbar", )
+    MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware', )
+    DEBUG_TOOLBAR_CONFIG = {'INTERCEPT_REDIRECTS': False, }
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:
+    EMAIL_HOST = ''
+    EMAIL_HOST_USER = ''
+    EMAIL_HOST_PASSWORD = ''
