@@ -122,6 +122,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     "mediabrute",
     "noodles",
+    "south", 
 )
 
 
