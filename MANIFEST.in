@@ -1,2 +1,3 @@
 include README.md
 recursive-include project_dj/assets *
+include project_dj/assets/.gitignore
