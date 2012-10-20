@@ -1,3 +1,4 @@
+# rename this file to .gitignore for use with git
 *.db
 *.sqlite*
 *.db-journal
