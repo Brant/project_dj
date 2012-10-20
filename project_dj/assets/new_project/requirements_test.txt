@@ -1,3 +1,4 @@
+-r requirements.txt
 coverage
 django_nose
 nose
