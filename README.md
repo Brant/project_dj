@@ -16,12 +16,16 @@ This is really designed to help you start your *own* project, which will presuma
 ### 0. Beforehand
 You'll need a couple of things installed first
 
-1. virtualenv
-2. sqlite3
+1. Python
+2. virtualenv
+3. git
+4. sqlite3
 
 If you don't want to use virtualenv, you can look at the requirements.txt file and either install all of those packages into your python environment or just dump them into the "contrib" directory (see [Structure > contrib](#contrib))
 
 ### 1. Get up and running
+You don't even need to download this module directly! 
+
 From a directory where you want to start your project, run these commands:
 
 	virtualenv env --system-site-packages
