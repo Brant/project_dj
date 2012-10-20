@@ -36,7 +36,7 @@ INSTALLED_APPS += ("website", )
 MEDIA_URL = "/media/"
 STATIC_URL = '/static/'
 
-from dj.conf.append import *
+from project_dj.conf.append import *
 
 if DEBUG:
     INTERNAL_IPS = ('127.0.0.1',)
