@@ -9,7 +9,6 @@ import os
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "src"))
-os.sys.path.insert(0, os.path.join(PROJECT_PATH, "contrib"))
 
 from project_dj.conf.base import *
 

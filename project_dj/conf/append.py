@@ -6,7 +6,7 @@ These settings usually fall into one of these categories:
     2) setting that requires the import of some other specific setting (e.g. DEBUG)
 
 """
-from project_dj.settings import DEBUG, INSTALLED_APPS, MIDDLEWARE_CLASSES, STATIC_URL, THE_THEME, PROJECT_PATH
+from settings import DEBUG, INSTALLED_APPS, MIDDLEWARE_CLASSES, STATIC_URL, THE_THEME, PROJECT_PATH
 
 JS_SETTINGS_TEMPLATE = "mediabrute/js/config.txt"
 
@@ -37,7 +37,6 @@ MEDIA_ROOT = PROJECT_PATH + "/assets/uploads/"
 STATIC_ROOT = PROJECT_PATH + "/assets/" + THE_THEME + "/static/"
 
 os.sys.path.insert(0, os.path.join(PROJECT_PATH, "src"))
-os.sys.path.insert(0, os.path.join(PROJECT_PATH, "contrib"))
 
 # This set of things hacks mediabrute so that the RUNSERVER can serve our static files
 # In production, DEBUG should be False, so this will all automatically deactivate
