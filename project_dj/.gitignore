@@ -1,4 +1,3 @@
-# Lines that start with '#' are comments.
 *.db
 *.sqlite*
 *.db-journal
@@ -28,3 +27,4 @@ env/
 build/
 mediabrute_usefile
 dist/
+settings.py
