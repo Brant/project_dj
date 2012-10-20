@@ -21,8 +21,6 @@ You'll need a couple of things installed first
 3. git
 4. sqlite3
 
-If you don't want to use virtualenv, you can look at the requirements.txt file and either install all of those packages into your python environment or just dump them into the "contrib" directory (see [Structure > contrib](#contrib))
-
 ### 1. Get up and running
 You don't even need to download this module directly! 
 
