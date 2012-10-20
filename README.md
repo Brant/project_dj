@@ -6,12 +6,10 @@ Project DJ takes a [convention over configuration](http://en.wikipedia.org/wiki/
 
 It also provides some handy front-end stuff for websites that I almost always use.
 
-## Jump right in
-Here's the quick and dirty to get up and running with a fresh project. 
-
-Unless you are working on the project_dj codebase specifically, I suggest you download a ZIP (instead of cloning/forking/pulling/whatever the source). 
-
 This is really designed to help you start your *own* project, which will presumably be under its own version control.
+
+## Jump right in
+Just run a few commands, and Project DJ will set you up with a django project structure.
 
 ### 0. Beforehand
 You'll need a couple of things installed first
