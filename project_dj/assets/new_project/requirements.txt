@@ -3,3 +3,4 @@ django-debug-toolbar
 git+git://github.com/Brant/django-mediabrute.git
 git+git://github.com/Brant/django-noodles.git
 South
+project_dj
