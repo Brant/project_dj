@@ -4,7 +4,7 @@ Utilities for Project DJ
 import os, shutil
 
 
-def recursive_file_gen(src_dir, dest_dir):
+def recursive_file_gen(src_dir, dest_dir, project_name):
     """
     Recursively generate files from an src_dir to a dest_dir
     """
@@ -26,3 +26,16 @@ def recursive_file_gen(src_dir, dest_dir):
                     orig = os.path.join(root, the_file)
                     placement = orig.replace(src_dir, dest_dir)
                     shutil.copy(orig, placement)
+                    
+                    if str(placement).endswith("py"):
+                        file_to_mod = open(placement)
+                        file_str = file_to_mod.read()
+                        file_to_mod.close()
+                        file_str = str(file_str)
+                        
+                        mod_str = file_str.replace("PROJECTDJPROJECT", project_name)
+                        file_to_mod = open(placement, "w")
+                        file_to_mod.write(mod_str)
+                        file_to_mod.close()
+                        
+                        

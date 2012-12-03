@@ -10,24 +10,11 @@ import os
 from settings import DEBUG, INSTALLED_APPS, MIDDLEWARE_CLASSES, STATIC_URL, THE_THEME, PROJECT_PATH
 
 
-TEMPLATE_DEBUG = DEBUG
 
-JS_SETTINGS_TEMPLATE = "mediabrute/js/config.txt"
-
-CSS_TOP_FILES = ["base.css", "style.css", ]
-CSS_BOTTOM_FILES = []
-
-
-TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    PROJECT_PATH + "/assets/" + THE_THEME + "/templates",
-)
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = PROJECT_PATH + "/assets/uploads/"
+
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.

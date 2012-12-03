@@ -28,4 +28,4 @@ env/
 build/
 mediabrute_usefile
 dist/
-settings.py
+conf/my_settings.py

@@ -6,6 +6,9 @@ from project_dj.util import recursive_file_gen
 
 if __name__ == "__main__":
     
-    dest_dir = os.path.dirname(sys.argv[1])
-    recursive_file_gen(DJ_NEW_PROJECT_ASSETS, dest_dir)
+    dest_dir = os.path.dirname(sys.argv[2])
+    project_name = sys.argv[1]
+    
+    recursive_file_gen(DJ_NEW_PROJECT_ASSETS, dest_dir, project_name)
     os.rename(os.path.join(dest_dir, "sample.gitignore"), os.path.join(dest_dir, ".gitignore"))
+    os.rename(os.path.join(dest_dir, "src"), os.path.join(dest_dir, project_name))
