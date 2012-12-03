@@ -28,4 +28,5 @@ env/
 build/
 mediabrute_usefile
 dist/
-conf/my_settings.py
+*/conf/my_settings.py
+assets/uploads/*/
