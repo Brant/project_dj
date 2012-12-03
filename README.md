@@ -27,7 +27,7 @@ From a directory where you want to start your project, run these commands:
 	virtualenv env --system-site-packages
 	. ./env/bin/activate
 	pip install git+git://github.com/Brant/project_dj.git
-	project_dj ./
+	project_dj <your_project> ./
 	pip install -r requirements.txt
 	python manage.py syncdb
 	python manage.py runserver 8001
@@ -35,7 +35,7 @@ From a directory where you want to start your project, run these commands:
 ### 2. Start working
 If you want to start creating Django apps for your project, they should live here:
 
-	./src/<your_app>
+	./<your_project>/<your_app>
 
 There's one there for you already, named *website*. You can feel free to start with that one.
 
