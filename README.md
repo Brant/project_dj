@@ -46,8 +46,8 @@ If you want to jump right into designing a homepage, head to:
 ## Structure
 It's important to understand a little bit about the structure of the project, as certain areas are "magic" and other areas pertain to the way Django handles it's structure.
 
-### <your_project>
-The <your_project> directory is where the Django apps created by *you* for *your* project should go
+### \<your_project\>
+The \<your_project\> directory is where the Django apps created by *you* for *your* project should go
 
 ### assets
 Assets include:
