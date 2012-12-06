@@ -4,3 +4,4 @@ git+git://github.com/Brant/django-mediabrute.git
 git+git://github.com/Brant/django-noodles.git
 South
 git+git://github.com/Brant/project_dj.git
+markdown
