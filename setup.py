@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "project_dj",
-    version = "0.4",
+    version = "0.5",
     url = 'https://github.com/Brant/project_dj',
     license = 'GPL',
     description = "Spins up starter django projects",
