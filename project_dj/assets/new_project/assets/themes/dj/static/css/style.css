@@ -11,16 +11,16 @@ html{
 	
 }
 body{
-	
+	font-size:15px;
 }
 a,
 a:link,
 a:active,
 a:visited{
-	
+	text-decoration:none;
 }
 a:hover{
-	
+	text-decoration:underline;
 }
 
 p, ol, ul{

@@ -17,9 +17,9 @@ urlpatterns = patterns('',
     
     url(r'^admin/', include(admin.site.urls)),
     
-    (r'^favicon\.ico$', 'django.views.generic.simple.redirect_to', {'url': '%sfavicon.ico' % settings.STATIC_URL}),
-    (r'^favicon\.png', 'django.views.generic.simple.redirect_to', {'url': '%sfavicon.png' % settings.STATIC_URL}),
-    (r'^apple-touch-icon\.png', 'django.views.generic.simple.redirect_to', {'url': '%sapple-touch-icon.png'  % settings.STATIC_URL}),
+    (r'^favicon\.ico$', RedirectView.as_view(url='%sfavicon.ico' % settings.STATIC_URL)),
+    (r'^favicon\.png',  RedirectView.as_view(url='%sfavicon.png' % settings.STATIC_URL)),
+    (r'^apple-touch-icon\.png',  RedirectView.as_view(url='%sapple-touch-icon.png'  % settings.STATIC_URL)),
 )
 
 
