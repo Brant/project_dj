@@ -14,8 +14,8 @@ Just run a few commands, and Project DJ will set you up with a django project st
 ### 0. Beforehand
 You'll need a couple of things installed first
 
-1. Python
-2. virtualenv
+1. Python 2.7.x
+2. [virtualenv](https://pypi.python.org/pypi/virtualenv)
 3. git
 4. sqlite3
 
